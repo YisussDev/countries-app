@@ -1,0 +1,101 @@
+#Buscador{
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1000000;
+}
+#Buscador > input {
+    width: 90%;
+    height: 60px;
+    margin: 0px 5%;
+    border-radius: 8px;
+    background-color: #2B3743;
+    border: none;
+    padding-left: 30px;
+
+}
+
+#Filtrador{
+    height: 60px;
+    width: 50%;
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    margin-left: 5%;
+    background-color: #2B3743;
+    border-radius: 8px;
+}
+#Filtrador > ul {
+    background-color: #2B3743;
+    list-style: none;
+    width: 100%;
+    border-radius: 8px;
+    padding: 20px 0xp;
+    color: white;
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 10px;
+    z-index: 1000;
+}
+#Filtrador > ul > li {
+    border-radius: 8px;
+    margin-bottom: 3px;
+    padding: 10px;
+    z-index: 1000000;
+}
+#Filtrador > ul > li:hover {
+    cursor: pointer;
+    background-color: #202D36;
+}
+
+#Filtrador_select{
+    width: 100%;
+    height: 60px;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+}
+#Filtrador_select button{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #2B3743;
+    border: none;
+}
+@media (min-width: 600px) {
+    #Buscador{
+        width: 100vw;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        z-index: 1000000;
+    }
+    #Buscador > input {
+        width: 40%;
+        height: 60px;
+        margin-left: 40px;
+        border-radius: 8px;
+        background-color: #2B3743;
+        border: none;
+        padding-left: 30px;
+    }
+    #Filtrador{
+        height: 60px;
+        width: 20%;
+        display: inline-flex;
+        font-size: 20px;
+        flex-direction: column;
+        margin-right: 40px;
+        background-color: #2B3743;
+        border-radius: 8px;
+    }
+  }

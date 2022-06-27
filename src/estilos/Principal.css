@@ -1,0 +1,66 @@
+#Principal {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #202D36;
+}
+#Volver{
+    width: 100px;
+    height: 30px;
+    background-color: #2B3743;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-left: 20px;
+}
+#Volver:hover{
+    background-color: #292929;
+    cursor: pointer;
+}
+#Paginado{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Paginado > button{
+    width: 70px;
+    height: 30px;
+    background-color: #2B3743;
+    display: flex;
+    margin: 0px 10px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+#preloader {
+    display: flex;
+    z-index: 100000;
+    position: relative;
+    margin: 100px auto;
+    width: 60px;
+    height: 60px;
+    border: 10px solid rgb(184, 184, 184);
+    border-top: 10px solid #666;
+    border-radius: 50%;
+    animation-name: girar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  #contenedor_tarjetas{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }

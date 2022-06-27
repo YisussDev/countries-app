@@ -1,0 +1,104 @@
+#infoCompleta{
+    width: 100vw;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    color: white;
+}
+#infoCompleta > img {
+    width: 100%;
+    height: 60%;
+    margin: 20px auto;
+    background-color: aliceblue;
+}
+#infoCompleta_1{
+    margin-bottom: 30px;
+}
+#infoCompleta_1 > p {
+    margin: 20px 0px;
+}
+#infoCompleta_2{
+    margin-bottom: 20px;
+}
+#infoCompleta_2 > p {
+    margin: 20px 0px;
+}
+#infoCompleta_3 > p{
+    margin: 20px 0px ;
+}
+#infoCompleta_3_cercanos{
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+}
+#infoCompleta_3_cercanos > button {
+    height: 100%;
+    width: 90px;
+}
+#info_total{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    #infoCompleta{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80vw;
+        height: 30vh;
+        padding: 0px;
+        margin: auto;
+        flex-direction: row;
+    }
+    #infoCompleta > img {
+        width: 50%;
+        height: 350px;
+        margin: 0px;
+    }
+    #info_total{
+        margin: 0px;
+        width: 40%;
+
+    }
+    #infoCompleta_1{
+        display: inline-flex;
+        flex-direction: column;
+        width: 50%;
+        font-size: 1rem;
+    }
+    #infoCompleta_1 > p{
+        margin: 5px;
+    }
+    #infoCompleta_2{
+        display: inline-flex;
+        flex-direction: column;
+        width: 50%;
+        font-size: 1rem;
+    }
+    #infoCompleta_2 > p{
+        margin: 5px;
+    }
+    #infoCompleta_3{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 5px;
+    }
+    #infoCompleta_3_cercanos > button{
+        margin: 5px;
+        padding: 5px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        word-wrap: break-word;
+        overflow: hidden;
+    }
+
+  }
