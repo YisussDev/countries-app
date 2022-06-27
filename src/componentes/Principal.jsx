@@ -92,7 +92,7 @@ const Principal = () => {
           key = {respuesta.name}
           id = {respuesta.name}
           mostrar={mostrarPais}
-          />}}
+          />}else{return null}} 
           
         )):(<div id='preloader'></div>)
         ):(datosMostrados.map(respuesta =>
@@ -111,13 +111,13 @@ const Principal = () => {
           id = {respuesta.name}
           bc1 = {respuesta.borders?(datos.map(x=>{if(x.alpha3Code === respuesta.borders[0]){
             return x.name
-          }})):null}
+          }else{return null}})):null}
           bc2 = {respuesta.borders?(datos.map(x=>{if(x.alpha3Code === respuesta.borders[1]){
             return x.name
-          }})):null}
+          }else{return null}})):null}
           bc3 = {respuesta.borders?(datos.map(x=>{if(x.alpha3Code === respuesta.borders[2]){
             return x.name
-          }})):null}
+          }else{return null}})):null}
           />
           
         ))}
