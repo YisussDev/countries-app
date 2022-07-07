@@ -8,6 +8,7 @@ const InfoCompleta = (props) => {
         
         <div id='info_total'>
             <h1>{props.name}</h1>
+            <div id='infoblock2'>
             <div id='infoCompleta_1'>
             {props.nativeName?(<p><strong>Native name: </strong>{props.nativeName}</p>):null}
             {props.population?(<p><strong>Population: </strong>{props.population}</p>):null}
@@ -20,6 +21,7 @@ const InfoCompleta = (props) => {
             {props.currencies?(<p><strong>Currencies: </strong>{props.currencies}</p>):null}
             {props.languages?(<p><strong>Languages: </strong>{props.languages}</p>):null}
         </div>
+            </div>
         <div id='infoCompleta_3'>
             {props.bc1?(<p><strong>Border Countries:</strong></p>):null}
         <div id='infoCompleta_3_cercanos'>

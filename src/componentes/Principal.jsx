@@ -64,7 +64,6 @@ const Principal = () => {
     setTimeout(() => {
       setDatosMostrados(datosFiltrados2)
     }, 1000);
-    console.log(datos)
   }
   const filtrabus = (input) => {
     let datosFiltrados = datos.filter(res => res.name.startsWith(`${input}`))
@@ -105,7 +104,10 @@ const Principal = () => {
           capital = {respuesta.subregion?respuesta.subregion:null}
           toplevel = {respuesta.topLevelDomain?respuesta.topLevelDomain:null}
           flag= {respuesta.flags.svg?respuesta.flags.svg:null}
-          languages = {respuesta.languages.map(x => x.name + ',')}
+          languages = {respuesta.languages.map((x, ind )=> {if((respuesta.languages.length -1) === ind){
+            return x.name + '.'
+          }else {return x.name + ', '}} 
+          )}
           currencies = {respuesta.currencies?(respuesta.currencies[0].name):null}
           key = {respuesta.name}
           id = {respuesta.name}

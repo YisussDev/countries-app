@@ -12,7 +12,6 @@
     width: 100%;
     height: 60%;
     margin: 20px auto;
-    background-color: aliceblue;
 }
 #infoCompleta_1{
     margin-bottom: 30px;
@@ -26,11 +25,17 @@
 #infoCompleta_2 > p {
     margin: 20px 0px;
 }
+#infoCompleta_3{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
 #infoCompleta_3 > p{
     margin: 20px 0px ;
 }
 #infoCompleta_3_cercanos{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     height: 30px;
 }
@@ -45,7 +50,7 @@
     width: 100%;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
     #infoCompleta{
         display: flex;
         align-items: center;
